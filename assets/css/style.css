@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+#bg{
+    background-image: url('../images/bg.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    padding: 25px;
+    background-color: orange;
+    width: 700px;
+    margin: 0 auto;
+    font-size: 75px;
+    font-weight: 100px;
+    margin-bottom: 20px;
+}
+
+#instructions{
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+#score-container{
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+.score-box{
+    float: left;
+    border: 2px double black;
+    height: 200px;
+    width: 200px;
+    margin: 25px;
+    background-color: lawngreen;
+}
+
+.crystal{
+    height: 100px;
+    width: 100px;
+}
+
+#crystal{
+
+}
+
+.clearfix{
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+img{
+    margin-right: 50px;
+}
+
+#gem-container{
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+img:hover{
+    cursor:pointer;
+  }

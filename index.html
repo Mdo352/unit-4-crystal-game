@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Crystal Collector</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <div id="bg">
+
+            <h1>Crystal Collector!!!</h1>
+            
+            <section id ="instructions">
+                
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your total score to random number. You lose the game if your total score goes above the random number.</p>
+                <p>The Value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time when the game starts, the game will change the value of each crystal</p>
+                
+            </section>
+
+            <section id="score-container">
+
+                <div class="score-box">
+                    <p>Score To Reach:</p>
+                    <div id="targetScore">0</div>
+                </div>
+
+                <div class="score-box">
+                    <p>wins:<span id="win">0</span></p>
+                    <p>loses:<span id="lose">0</span></p>
+                </div>
+
+                <div class="score-box">
+                    <p>current Score:</p>
+                    <div id="currentScore">0</div>
+                </div>
+
+            </section>
+
+            <div class="clearfix"></div>
+
+            <section id='gem-container'>
+                <img src="./assets/images/amethyst-crystal.jpg" alt="Purple Crystal" class="crystal" id="crystal1">
+                <img src="./assets/images/blue-crystal.jpg" alt="Blue Crystal" class="crystal" id="crystal2">
+                <img src="./assets/images/green-crystal.jpg" alt="Green Crystal" class="crystal" id="crystal3">
+                <img src="./assets/images/red-crystal.jpg" alt="Red Crystal" class="crystal" id="crystal4">
+            </section>
+            
+            <script src="./assets/javascript/game.js"></script>
+        </div>
+    </body>
+</html>
