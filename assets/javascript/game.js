@@ -1,8 +1,9 @@
 $(document).ready(function(){
     var targetScore = Math.floor(Math.random() * 102) + 19;
-    runningScore = 0;
-    gameWin = 0;
-    gamelose = 0;
+    var runningScore = 0;
+    var gameWin = 0;
+    var gamelose = 0;
+    var round = 1;
 
     
     var crystalObj = {
@@ -12,13 +13,13 @@ $(document).ready(function(){
     four : Math.floor(Math.random() * 12) + 1};
     
     function resetGame(){
-        var crystalObj = {
+        crystalObj = {
             one : Math.floor(Math.random() * 12) + 1,
             two : Math.floor(Math.random() * 12) + 1,
             three : Math.floor(Math.random() * 12) + 1,
             four : Math.floor(Math.random() * 12) + 1};
 
-        var targetScore = Math.floor(Math.random() * 102) + 19;
+        targetScore = Math.floor(Math.random() * 102) + 19;
         runningScore = 0;
         $('#targetScore').text(targetScore);
         $('#currentScore').text(runningScore);
@@ -29,6 +30,7 @@ $(document).ready(function(){
             gameWin++;
             $('#win').text(gameWin);
             resetGame();
+            round++;
         }
     
         if (runningScore > targetScore){
