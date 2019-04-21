@@ -41,7 +41,7 @@ $(document).ready(function(){
     }
 
 
-    console.log(crystalObj.two);
+    // console.log(crystalObj.two);
 
     
     $('#targetScore').text(targetScore);
